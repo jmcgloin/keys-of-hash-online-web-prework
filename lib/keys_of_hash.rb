@@ -4,5 +4,6 @@ class Hash
     arguments.collect do 
       |arg|
       binding.pry
+    end
   end
 end
