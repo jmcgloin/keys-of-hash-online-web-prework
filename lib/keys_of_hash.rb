@@ -6,7 +6,8 @@ class Hash
       |ind|
       val = values[ind]
       key = keys[ind]
-      if arguments.index(val)
+      if arguments.index(val) != nil then matches.push(key) end
+    end
     matches
   end
 end
