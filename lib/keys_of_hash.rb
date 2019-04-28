@@ -2,11 +2,11 @@ require "pry"
 class Hash
   def keys_of(*arguments)
     matches = []
-    arguments.collect do 
-      |arg|
-      matches.push(keys[values.index(arg)])
-      binding.pry
-    end
+    values.each_index do
+      |ind|
+      val = values[ind]
+      key = keys[ind]
+      if arguments.index(val)
     matches
   end
 end
