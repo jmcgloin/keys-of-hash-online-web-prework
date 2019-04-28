@@ -5,7 +5,7 @@ class Hash
     arguments.collect do 
       |arg|
       matches.push(keys[values.index(arg)])
-      binding.pry
+      # binding.pry
     end
     matches
   end
